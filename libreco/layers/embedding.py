@@ -1,5 +1,4 @@
 from ..tfops import tf
-import tensorflow
 
 
 def embedding_lookup(
@@ -20,7 +19,7 @@ def embedding_lookup(
                 shape=var_shape,
                 initializer=initializer,
                 regularizer=regularizer,
-                dtype=tensorflow.float32
+                dtype=tf.float32
             )
         return tf.nn.embedding_lookup(embed_var, indices)
 
